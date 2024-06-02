@@ -17,11 +17,11 @@ export default function Hero() {
           </p>
           <HeroVector />
           <p className="-mt-16 max-w-[450px] text-white">
-            Hello and welcome to my site! I'm a passionate full stack web
+            Hello and welcome to my site! I&apos;m a passionate full stack web
             developer with a unique background in sales. I use the MERN stack
             and love React libraries like Tailwind CSS and Framer Motion.
-            Through an intensive bootcamp, I've mastered the frameworks needed
-            to bring your projects to life!
+            Through an intensive bootcamp, I&apos;ve mastered the frameworks
+            needed to bring your projects to life!
           </p>
         </div>
       </div>
