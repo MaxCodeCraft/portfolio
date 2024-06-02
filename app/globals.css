@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Digitalix";
+  src: url("/assets/digitalix.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-gradient {
+  background-image: url("/images/space.png"),
+    repeating-linear-gradient(
+      to bottom,
+      #003b73,
+      #003b73 100vh,
+      #242627 150vh,
+      #242627 250vh,
+      #003b73 300vh,
+      #003b73 400vh,
+      #242627 450vh
+    );
+  background-size: cover, auto 450vh;
+  background-repeat: no-repeat, repeat-y;
+  background-position: center top, center top;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

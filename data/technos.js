@@ -1,0 +1,88 @@
+const technos = [
+  {
+    img: "/technos/nextjs.svg",
+    title: "Next.js",
+    alt: "Next.js Logo",
+    desc: "Framework React minimaliste et puissant",
+    url: "https://nextjs.org/",
+  },
+  {
+    img: "/technos/react.svg",
+    title: "React",
+    alt: "React Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://react.dev/",
+  },
+  {
+    img: "/technos/nodejs.svg",
+    title: "Node.js",
+    alt: "Node.js Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://nodejs.org/",
+  },
+  {
+    img: "/technos/express.svg",
+    title: "Express",
+    alt: "Express Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://expressjs.com/",
+  },
+  {
+    img: "/technos/mongoose.svg",
+    title: "Mongoose",
+    alt: "Mongoose Logo",
+    desc: "Framework pour applications mobiles",
+    url: "https://mongoosejs.com/",
+  },
+  {
+    img: "/technos/mongodb.svg",
+    title: "MongoDB",
+    alt: "MongoDB Logo",
+    desc: "Framework React minimaliste et puissant",
+    url: "https://mongodb.com/",
+  },
+  {
+    img: "/technos/typescript.svg",
+    title: "TypeScript",
+    alt: "TypeScript Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://typescriptlang.org/",
+  },
+  {
+    img: "/technos/git.svg",
+    title: "Git",
+    alt: "Git Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://git-scm.com/",
+  },
+  {
+    img: "/technos/react-native.svg",
+    title: "React Native",
+    alt: "React Native Logo",
+    desc: "Framework pour applications mobiles",
+    url: "https://reactnative.dev/",
+  },
+  {
+    img: "/technos/tailwind-css.svg",
+    title: "Tailwind CSS",
+    alt: "Tailwind CSS Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://tailwindcss.com/",
+  },
+  {
+    img: "/technos/daisyui.svg",
+    title: "DaisyUi",
+    alt: "DaisyUi Logo",
+    desc: "Framework pour applications mobiles",
+    url: "https://reactnative.dev/",
+  },
+  {
+    img: "/technos/shadcnui.svg",
+    title: "Shadcn",
+    alt: "Shadcn Logo",
+    desc: "Librairie JavaScript pour l'UI",
+    url: "https://react.dev/",
+  },
+];
+
+export default technos;
