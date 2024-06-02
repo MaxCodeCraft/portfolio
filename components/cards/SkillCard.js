@@ -2,6 +2,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+const skillCardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function SkillCard(props) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -13,6 +18,7 @@ export default function SkillCard(props) {
         }  rounded-md`}
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
+        variants={skillCardVariants}
       >
         <img
           src={props.img}
