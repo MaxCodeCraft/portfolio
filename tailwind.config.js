@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         gallifreyan: "#FFD700",
         tardis: "#FF8C00",
+        spatialGrey: "#242627",
       },
     },
   },
