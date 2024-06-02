@@ -26,12 +26,19 @@ export default function Header() {
         </p>
       </div>
       <div className="flex gap-4">
-        <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white hover:border-gallifreyan">
-          <FontAwesomeIcon icon={faGithub} className="w-6" color="white" />
-        </div>
-        <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white hover:border-gallifreyan">
-          <FontAwesomeIcon icon={faLinkedin} className="w-6" color="white" />
-        </div>
+        <a href="https://github.com/MaxCodeCraft/" target="blank">
+          <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyan hover:text-gallifreyan">
+            <FontAwesomeIcon icon={faGithub} className="w-6" />
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/maxime-bocquet-8870a0261/"
+          target="blank"
+        >
+          <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyan hover:text-gallifreyan">
+            <FontAwesomeIcon icon={faLinkedin} className="w-6" color="white" />
+          </div>
+        </a>
       </div>
     </header>
   );

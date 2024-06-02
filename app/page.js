@@ -1,17 +1,9 @@
 import dynamic from "next/dynamic";
 import Hero from "@/components/sections/Hero";
+import Skills from "@/components/sections/Skills";
 
-const SkillsTitle = dynamic(() => import("@/components/titles/SkillsTitle"), {
-  ssr: false,
-});
 const ProjectsTitle = dynamic(
   () => import("@/components/titles/ProjectsTitle"),
-  {
-    ssr: false,
-  },
-);
-const SkillCardsContainer = dynamic(
-  () => import("@/components/cards/SkillCardsContainer"),
   {
     ssr: false,
   },
@@ -19,11 +11,12 @@ const SkillCardsContainer = dynamic(
 
 export default function Home() {
   return (
-    <main className="custom-gradient flex min-h-screen w-screen flex-col gap-10">
+    <main className="custom-gradient flex min-h-screen w-screen flex-col">
       <Hero />
-      <SkillsTitle />
-      <SkillCardsContainer />
-      <ProjectsTitle />
+      <Skills />
+      <div className="mt-28">
+        <ProjectsTitle />
+      </div>
     </main>
   );
 }
