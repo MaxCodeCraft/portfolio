@@ -31,7 +31,7 @@ const skills = technos.map((skill, idx) => {
 export default function SkillCardsContainer() {
   return (
     <motion.div
-      className="w-10/12 flex gap-6 flex-wrap"
+      className="flex w-10/12 flex-wrap gap-6"
       variants={container}
       initial="hidden"
       animate="visible"

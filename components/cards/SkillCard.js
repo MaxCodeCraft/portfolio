@@ -26,7 +26,7 @@ export default function SkillCard(props) {
           className={`${isHovered ? "w-16" : "w-24"}`}
         />
         {isHovered ? (
-          <div>
+          <div className="flex flex-col items-center gap-2">
             <p className="text-center font-digitalix text-gallifreyan text-sm">
               {props.title}
             </p>
