@@ -13,9 +13,9 @@ export default function SkillCard(props) {
   return (
     <a href={props.url} target="blank">
       <motion.div
-        className={`flex flex-col justify-around items-center w-48 h-48 border-2 ${
-          isHovered ? "border-gallifreyan" : "border-white"
-        }  rounded-md`}
+        className={`flex h-48 w-48 flex-col items-center justify-around border-2 ${
+          isHovered ? "border-gallifreyanGold" : "border-white"
+        } rounded-md`}
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         variants={skillCardVariants}
@@ -27,7 +27,7 @@ export default function SkillCard(props) {
         />
         {isHovered ? (
           <div className="flex flex-col items-center gap-2">
-            <p className="text-center font-digitalix text-gallifreyan text-sm">
+            <p className="text-gallifreyanGold text-center font-digitalix text-sm">
               {props.title}
             </p>
             <p className="text-center text-white">{props.desc}</p>

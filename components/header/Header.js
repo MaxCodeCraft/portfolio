@@ -12,22 +12,23 @@ export default function Header() {
           width={40}
           height={73}
           className="w-10 object-contain"
+          alt="MaxCodeCraft Logo"
         />
       </div>
       <div className="flex items-center justify-center gap-4">
-        <p className="font-digitalix text-white hover:text-gallifreyan">
+        <p className="hover:text-gallifreyanGold font-digitalix text-white">
           MY WORK
         </p>
-        <p className="font-digitalix text-white hover:text-gallifreyan">
+        <p className="hover:text-gallifreyanGold font-digitalix text-white">
           ABOUT ME
         </p>
-        <p className="font-digitalix text-white hover:text-gallifreyan">
+        <p className="hover:text-gallifreyanGold font-digitalix text-white">
           CONTACT
         </p>
       </div>
       <div className="flex gap-4">
         <a href="https://github.com/MaxCodeCraft/" target="blank">
-          <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyan hover:text-gallifreyan">
+          <div className="hover:border-gallifreyanGold hover:text-gallifreyanGold flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white">
             <FontAwesomeIcon icon={faGithub} className="w-6" />
           </div>
         </a>
@@ -35,7 +36,7 @@ export default function Header() {
           href="https://www.linkedin.com/in/maxime-bocquet-8870a0261/"
           target="blank"
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyan hover:text-gallifreyan">
+          <div className="hover:border-gallifreyanGold hover:text-gallifreyanGold flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white">
             <FontAwesomeIcon icon={faLinkedin} className="w-6" />
           </div>
         </a>

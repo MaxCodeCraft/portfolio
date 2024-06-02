@@ -9,21 +9,11 @@
   font-style: normal;
 }
 
-.custom-gradient {
-  background-image: url("/images/space.png"),
-    repeating-linear-gradient(
-      to bottom,
-      #003b73,
-      #003b73 100vh,
-      #242627 150vh,
-      #242627 250vh,
-      #003b73 300vh,
-      #003b73 400vh,
-      #242627 450vh
-    );
-  background-size: cover, auto 450vh;
+.space-bg {
+  background-image: url("/images/space.png");
+  background-size: cover;
   background-repeat: no-repeat, repeat-y;
-  background-position: center top, center top;
+  background-position: center top;
 }
 
 :root {

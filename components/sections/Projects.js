@@ -9,7 +9,7 @@ const ProjectsTitle = dynamic(
 
 export default function Projects() {
   return (
-    <div className="mt-28 flex w-screen flex-col">
+    <div className="to-tardisBlue flex w-screen flex-col bg-gradient-to-b from-spatialGrey from-10% pt-28">
       <ProjectsTitle />
       <div className="flex w-full justify-center py-32">
         <svg

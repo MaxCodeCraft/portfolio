@@ -18,6 +18,18 @@ export default function ProjectsTitle() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="3.5" result="coloredBlur" />
+          <feOffset dx="0" dy="0" result="offsetBlur" />
+          <feFlood flood-color="orange" result="glowColor" />
+          <feComposite in="glowColor" in2="offsetBlur" operator="in" />
+          <feMerge>
+            <feMergeNode />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
       <motion.path
         opacity="0.5"
         d="M0 4.88806H699.5L779.5 110.47H1041"
@@ -57,6 +69,7 @@ export default function ProjectsTitle() {
         width="237.943"
         height="5.86567"
         fill="#FF8C00"
+        filter="url(#glow)"
       />
       <line
         x1="66.2842"
@@ -92,7 +105,13 @@ export default function ProjectsTitle() {
         stroke-linejoin="round"
         stroke-dasharray="1 2"
       />
-      <rect x="464.555" width="67.9837" height="9.77612" fill="#FF8C00" />
+      <rect
+        x="464.555"
+        width="67.9837"
+        height="9.77612"
+        fill="#FF8C00"
+        filter="url(#glow)"
+      />
       <rect x="201.118" width="8.49796" height="9.77612" fill="white" />
       <g filter="url(#filter0_d_10_651)">
         <path

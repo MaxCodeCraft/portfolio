@@ -16,8 +16,9 @@ module.exports = {
         digitalix: ["Digitalix", "sans-serif"],
       },
       colors: {
-        gallifreyan: "#FFD700",
-        tardis: "#FF8C00",
+        gallifreyanGold: "#FFD700",
+        tardisOrange: "#FF8C00",
+        tardisBlue: "#003B73",
         spatialGrey: "#242627",
       },
     },

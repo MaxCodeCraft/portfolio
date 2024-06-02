@@ -13,7 +13,7 @@ const SkillCardsContainer = dynamic(
 
 export default function Skills() {
   return (
-    <div className="mt-10 flex w-screen flex-col">
+    <div className="flex w-screen flex-col bg-spatialGrey pt-10">
       <SkillsTitle />
       <div className="flex w-full justify-center py-16">
         <SkillCardsContainer />

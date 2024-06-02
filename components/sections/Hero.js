@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="mt-56 flex w-screen justify-center">
+    <div className="from-tardisBlue flex w-screen justify-center bg-gradient-to-b from-60% to-spatialGrey pt-56">
       <div className="left-section">
         <div className="flex flex-col gap-4">
           <div>
             <span className="align-bottom text-3xl text-white">Hi, I am </span>
-            <span className="font-digitalix text-4xl text-gallifreyan shadow-lg">
+            <span className="text-gallifreyanGold font-digitalix text-4xl shadow-lg">
               MAX
             </span>
           </div>
-          <p className="align-bottom font-digitalix text-tardis">
+          <p className="text-tardisOrange align-bottom font-digitalix">
             FULL STACK <span className="text-white">DEVELOPPER</span>
           </p>
           <HeroVector />
@@ -31,6 +31,7 @@ export default function Hero() {
           width={164}
           height={581}
           className="h-auto w-40"
+          alt="Me standing photo"
         />
       </div>
     </div>
