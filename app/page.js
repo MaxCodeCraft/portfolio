@@ -5,6 +5,12 @@ import technos from "@/data/technos";
 const SkillsTitle = dynamic(() => import("@/components/titles/SkillsTitle"), {
   ssr: false,
 });
+const ProjectsTitle = dynamic(
+  () => import("@/components/titles/ProjectsTitle"),
+  {
+    ssr: false,
+  }
+);
 const SkillCard = dynamic(() => import("@/components/cards/SkillCard"), {
   ssr: false,
 });
@@ -44,6 +50,7 @@ export default function Home() {
       <div className="pt-20 px-20 w-10/12 flex justify-center flex-wrap gap-8 items-center">
         {skills}
       </div>
+      <SkillsTitle />
     </main>
   );
 }

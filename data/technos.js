@@ -70,6 +70,13 @@ const technos = [
     url: "https://tailwindcss.com/",
   },
   {
+    img: "/technos/framer-motion.svg",
+    title: "Framer Motion",
+    alt: "Framer Motion Logo",
+    desc: "Framework pour applications mobiles",
+    url: "https://framer.com/motion/",
+  },
+  {
     img: "/technos/daisyui.svg",
     title: "DaisyUi",
     alt: "DaisyUi Logo",
