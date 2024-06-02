@@ -3,7 +3,7 @@ export default function Hero() {
     <div className="mt-56 flex w-screen justify-center">
       <div className="left-section">
         <div>
-          <span className="align-bottom text-3xl text-white">Hi ! I am </span>
+          <span className="align-bottom text-3xl text-white">Hi, I am </span>
           <span className="font-digitalix text-4xl text-gallifreyan">MAX</span>
         </div>
         <p className="align-bottom font-digitalix text-tardis">
