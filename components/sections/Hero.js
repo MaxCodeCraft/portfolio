@@ -1,8 +1,9 @@
 import HeroVector from "../vectors/HeroVector";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="mt-56 flex w-screen items-center justify-center">
+    <div className="mt-56 flex w-screen justify-center">
       <div className="left-section">
         <div className="flex flex-col gap-4">
           <div>
@@ -24,7 +25,14 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="right-section"></div>
+      <div className="right-section pl-6">
+        <Image
+          src={"/images/me.png"}
+          width={164}
+          height={581}
+          className="h-auto w-40"
+        />
+      </div>
     </div>
   );
 }
