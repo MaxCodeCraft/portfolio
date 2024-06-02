@@ -36,7 +36,7 @@ export default function Header() {
           target="blank"
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyan hover:text-gallifreyan">
-            <FontAwesomeIcon icon={faLinkedin} className="w-6" color="white" />
+            <FontAwesomeIcon icon={faLinkedin} className="w-6" />
           </div>
         </a>
       </div>

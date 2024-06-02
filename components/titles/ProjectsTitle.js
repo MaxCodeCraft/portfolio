@@ -10,11 +10,10 @@ const play = {
   },
 };
 
-export default function SkillsTitle() {
+export default function ProjectsTitle() {
   return (
     <svg
-      width="1041"
-      height="131"
+      className="h-auto w-full md:max-w-[60%]"
       viewBox="0 0 1041 131"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
