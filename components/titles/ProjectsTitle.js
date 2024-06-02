@@ -7,7 +7,6 @@ const play = {
   },
   visible: {
     pathLength: 1,
-    duration: 20,
   },
 };
 

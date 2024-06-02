@@ -2,24 +2,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const onHover = {
-  center: {
-    x: 0,
-    y: 0,
-    scale: 1,
-  },
-  top: {
-    x: 0,
-    y: 0,
-    scale: 0.7,
-  },
-};
-
 export default function SkillCard(props) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <a href={props.url}>
+    <a href={props.url} target="blank">
       <motion.div
         className={`flex flex-col justify-around items-center w-48 h-48 border-2 ${
           isHovered ? "border-gallifreyan" : "border-white"
