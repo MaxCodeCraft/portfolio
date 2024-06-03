@@ -1,5 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const ProjectsTitle = dynamic(
   () => import("@/components/titles/ProjectsTitle"),
@@ -8,14 +10,23 @@ const ProjectsTitle = dynamic(
   },
 );
 
+const ProjectTopVector = dynamic(
+  () => import("@/components/vectors/ProjectTopVector"),
+  {
+    ssr: false,
+  },
+);
+
 export default function Projects() {
+  const [isSelected, setIsSelected] = useState(false);
+
   return (
     <div
       id="projects"
       className="flex w-screen flex-col bg-gradient-to-b from-spatialGrey from-10% to-tardisBlue pt-28"
     >
       <ProjectsTitle />
-      <div className="flex w-full justify-center py-32">
+      <div className="relative flex w-full justify-center py-36">
         <svg width="0" height="0">
           <defs>
             <clipPath id="myClip">
@@ -49,13 +60,21 @@ export default function Projects() {
             />
           </svg>
           <a href="https://notaview-frontend.vercel.app/" target="blank">
-            <div className="clip-path absolute left-[155px] top-[11px] rotate-[0.2deg] grayscale hover:cursor-pointer hover:grayscale-0">
+            <motion.div
+              className="clip-path absolute left-[155px] top-[11px] rotate-[0.2deg] grayscale hover:cursor-pointer hover:grayscale-0"
+              onHoverStart={(e) => {
+                setIsSelected(true);
+              }}
+              onHoverEnd={(e) => {
+                setIsSelected(false);
+              }}
+            >
               <img
                 src="/projects/notaview.png"
                 alt="Notaview Website"
                 className="h-[146px] w-[262px]"
               />
-            </div>
+            </motion.div>
           </a>
           <a href="https://maxime-bocquet.vercel.app/" target="blank">
             <div className="clip-path absolute right-[7px] top-[98px] rotate-[59.7deg] grayscale hover:cursor-pointer hover:grayscale-0">
@@ -67,6 +86,7 @@ export default function Projects() {
             </div>
           </a>
         </div>
+        <ProjectTopVector isSelected={isSelected} />
       </div>
     </div>
   );
