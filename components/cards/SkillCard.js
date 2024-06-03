@@ -27,8 +27,8 @@ export default function SkillCard(props) {
         />
         {isHovered ? (
           <div className="flex flex-col items-center gap-2">
-            <p className="text-gallifreyanGold text-center font-digitalix text-sm">
-              {props.title}
+            <p className="text-center font-digitalix text-sm text-gallifreyanGold">
+              {props.title.toUpperCase()}
             </p>
             <p className="text-center text-white">{props.desc}</p>
           </div>

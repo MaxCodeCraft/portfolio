@@ -39,7 +39,7 @@ export default function ProjectsTitle() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
         stroke="white"
-        stroke-width="3"
+        strokeWidth="3"
       />
       <motion.path
         opacity="0.5"
@@ -50,7 +50,7 @@ export default function ProjectsTitle() {
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
         stroke="white"
-        stroke-width="3"
+        strokeWidth="3"
       />
       <motion.path
         opacity="0.5"
@@ -61,7 +61,7 @@ export default function ProjectsTitle() {
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
         stroke="white"
-        stroke-width="3"
+        strokeWidth="3"
       />
       <rect
         x="407.902"
@@ -84,9 +84,9 @@ export default function ProjectsTitle() {
         x2="220.947"
         y2="40.5149"
         stroke="white"
-        stroke-width="5"
-        stroke-linejoin="round"
-        stroke-dasharray="1 2"
+        strokeWidth="5"
+        strokeLinejoin="round"
+        strokeDasharray="1 2"
       />
       <line
         x1="886.284"
@@ -101,9 +101,9 @@ export default function ProjectsTitle() {
         x2="1040.95"
         y2="90.5149"
         stroke="white"
-        stroke-width="5"
-        stroke-linejoin="round"
-        stroke-dasharray="1 2"
+        strokeWidth="5"
+        strokeLinejoin="round"
+        strokeDasharray="1 2"
       />
       <rect
         x="464.555"
@@ -126,8 +126,8 @@ export default function ProjectsTitle() {
         x2="391.354"
         y2="105.582"
         stroke="#FFD700"
-        stroke-width="3"
-        stroke-dasharray="4 4"
+        strokeWidth="3"
+        strokeDasharray="4 4"
       />
     </svg>
   );

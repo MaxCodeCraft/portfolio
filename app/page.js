@@ -5,7 +5,7 @@ import Starfield from "react-starfield";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-screen flex-col">
+    <main className="max-w-screen flex flex-col overflow-y-hidden">
       <Starfield
         starCount={1200}
         starColor={[255, 255, 255]}

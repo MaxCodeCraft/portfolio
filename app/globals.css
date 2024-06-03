@@ -28,6 +28,29 @@
   );
 }
 
+.button-cutted {
+  --b: 2px; /* border */
+  --s: 20px; /* size of the cut */
+  --c: #ffd700;
+
+  border: var(--b) solid var(--c);
+  border-radius: 4px;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--s)),
+    calc(100% - var(--s)) 100%,
+    0 100%
+  );
+  background: linear-gradient(
+      -45deg,
+      var(--c) calc(0.707 * var(--s) + var(--b)),
+      #0000 0
+    )
+    border-box;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
