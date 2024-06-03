@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import projects from "@/data/projects";
 
 const ProjectsTitle = dynamic(
   () => import("@/components/titles/ProjectsTitle"),
@@ -17,8 +18,22 @@ const ProjectTopVector = dynamic(
   },
 );
 
+const ProjectTopRightVector = dynamic(
+  () => import("@/components/vectors/ProjectTopRightVector"),
+  {
+    ssr: false,
+  },
+);
+
+const ProjectBottomRightVector = dynamic(
+  () => import("@/components/vectors/ProjectBottomRightVector"),
+  {
+    ssr: false,
+  },
+);
+
 export default function Projects() {
-  const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState("");
 
   return (
     <div
@@ -59,34 +74,55 @@ export default function Projects() {
               strokeWidth="2"
             />
           </svg>
-          <a href="https://notaview-frontend.vercel.app/" target="blank">
+          {/* Top Project */}
+          <a href={projects[0].url} target="blank">
             <motion.div
               className="clip-path absolute left-[155px] top-[11px] rotate-[0.2deg] grayscale hover:cursor-pointer hover:grayscale-0"
               onHoverStart={(e) => {
-                setIsSelected(true);
+                setIsSelected("top");
               }}
               onHoverEnd={(e) => {
-                setIsSelected(false);
+                setIsSelected("");
               }}
             >
               <img
-                src="/projects/notaview.png"
-                alt="Notaview Website"
+                src={projects[0].image}
+                alt={projects[0].alt}
                 className="h-[146px] w-[262px]"
               />
             </motion.div>
           </a>
-          <a href="https://maxime-bocquet.vercel.app/" target="blank">
-            <div className="clip-path absolute right-[7px] top-[98px] rotate-[59.7deg] grayscale hover:cursor-pointer hover:grayscale-0">
+          {/* Top Right Project */}
+          <a href={projects[1].url} target="blank">
+            <motion.div
+              className="clip-path absolute right-[7px] top-[98px] rotate-[59.7deg] grayscale hover:cursor-pointer hover:grayscale-0"
+              onHoverStart={(e) => {
+                setIsSelected("top-right");
+              }}
+              onHoverEnd={(e) => {
+                setIsSelected("");
+              }}
+            >
               <img
-                src="/projects/portfolio.png"
-                alt="My Own Website"
+                src={projects[1].image}
+                alt={projects[1].alt}
                 className="h-[146px] w-[262px]"
               />
-            </div>
+            </motion.div>
           </a>
         </div>
-        <ProjectTopVector isSelected={isSelected} />
+        <ProjectTopVector
+          isSelected={isSelected}
+          title={projects[0].title}
+          desc={projects[0].desc}
+          technos={projects[0].technos}
+        />
+        <ProjectTopRightVector
+          isSelected={isSelected}
+          title={projects[1].title}
+          desc={projects[1].desc}
+          technos={projects[1].technos}
+        />
       </div>
     </div>
   );
