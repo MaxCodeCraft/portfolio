@@ -9,11 +9,23 @@
   font-style: normal;
 }
 
-.space-bg {
-  background-image: url("/images/space.png");
+.bg-nebula::before {
+  content: "";
+  background-image: url("/images/nebula.png");
+  background-position: right;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat, repeat-y;
-  background-position: center top;
+  opacity: 0.2;
+}
+
+.clipped-corner {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%
+  );
 }
 
 :root {

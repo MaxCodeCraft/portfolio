@@ -1,18 +1,20 @@
 import HeroVector from "../vectors/HeroVector";
+import YellowButton from "../buttons/YellowButton";
+import TransparentButton from "../buttons/TransparentButton";
 import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="from-tardisBlue flex w-screen justify-center bg-gradient-to-b from-60% to-spatialGrey pt-56">
+    <div className="flex w-screen justify-center bg-gradient-to-b from-tardisBlue from-60% to-spatialGrey pt-56">
       <div className="left-section">
         <div className="flex flex-col gap-4">
           <div>
             <span className="align-bottom text-3xl text-white">Hi, I am </span>
-            <span className="text-gallifreyanGold font-digitalix text-4xl shadow-lg">
+            <span className="font-digitalix text-4xl text-gallifreyanGold shadow-lg">
               MAX
             </span>
           </div>
-          <p className="text-tardisOrange align-bottom font-digitalix">
+          <p className="align-bottom font-digitalix text-tardisOrange">
             FULL STACK <span className="text-white">DEVELOPPER</span>
           </p>
           <HeroVector />
@@ -23,6 +25,10 @@ export default function Hero() {
             Through an intensive bootcamp, I&apos;ve mastered the frameworks
             needed to bring your projects to life!
           </p>
+          <div className="flex gap-4">
+            <YellowButton url="/" title="CONTACT ME" />
+            <TransparentButton url="#projects" title="DISCOVER MY WORK" />
+          </div>
         </div>
       </div>
       <div className="right-section pl-6">
