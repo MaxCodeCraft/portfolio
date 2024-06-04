@@ -26,7 +26,7 @@ export default function Hero() {
             needed to bring your projects to life!
           </p>
           <div className="flex gap-4">
-            <YellowButton url="/" title="CONTACT ME" />
+            <YellowButton url="#contact" title="CONTACT ME" />
             <TransparentButton url="#projects" title="DISCOVER MY WORK" />
           </div>
         </div>

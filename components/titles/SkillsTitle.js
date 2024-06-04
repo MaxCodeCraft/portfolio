@@ -13,7 +13,7 @@ const play = {
 export default function SkillsTitle() {
   return (
     <svg
-      className="h-auto w-full md:max-w-[60%]"
+      className="h-auto w-full lg:max-w-[1041px]"
       viewBox="0 0 1041 131"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

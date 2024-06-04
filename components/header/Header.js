@@ -25,9 +25,11 @@ export default function Header() {
         <p className="font-digitalix text-white hover:text-gallifreyanGold">
           ABOUT ME
         </p>
-        <p className="font-digitalix text-white hover:text-gallifreyanGold">
-          CONTACT
-        </p>
+        <Link href={"#contact"}>
+          <p className="font-digitalix text-white hover:text-gallifreyanGold">
+            CONTACT
+          </p>
+        </Link>
       </div>
       <div className="flex gap-4">
         <a href="https://github.com/MaxCodeCraft/" target="blank">

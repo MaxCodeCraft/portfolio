@@ -13,6 +13,7 @@ const play = {
 export default function ContactTitle() {
   return (
     <svg
+      className="h-auto w-full lg:max-w-[1041px]"
       width="1041"
       height="131"
       viewBox="0 0 1041 131"
