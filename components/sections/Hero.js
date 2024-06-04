@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex w-screen justify-center bg-gradient-to-b from-tardisBlue from-60% to-spatialGrey pt-56">
+    <div className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-60% to-spatialGrey pt-56">
       <div className="left-section">
         <div className="flex flex-col gap-4">
           <div>

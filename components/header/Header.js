@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Header() {
   return (
-    <header className="absolute flex h-28 w-screen items-center justify-between bg-spatialGrey/75 px-5">
+    <header className="absolute flex h-28 w-full items-center justify-between bg-spatialGrey/75 px-5">
       <div>
         <Image
           src={"/mcc-logo.png"}

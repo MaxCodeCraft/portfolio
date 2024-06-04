@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="bg-nebula flex w-screen flex-col bg-spatialGrey pt-10"
+      className="bg-nebula flex w-full flex-col bg-spatialGrey pt-10"
     >
       <SkillsTitle />
       <div className="flex w-full justify-center py-16">
