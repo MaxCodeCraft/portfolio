@@ -38,7 +38,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex w-full flex-col bg-gradient-to-b from-spatialGrey from-10% to-tardisBlue pt-28"
+      className="flex w-full flex-col bg-gradient-to-b from-spatialGrey from-10% via-tardisBlue via-60% to-spatialGrey pt-28"
     >
       <ProjectsTitle />
       <div className="relative flex w-full justify-center py-36">

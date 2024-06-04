@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 import Starfield from "react-starfield";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   );
 }
