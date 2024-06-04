@@ -61,7 +61,7 @@ export default function Contact() {
           <div className="flex w-full gap-4">
             <div className="flex h-14 w-1/2 items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
               <input
-                className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-white"
+                className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
                 type="text"
                 id="name"
                 value={name}
@@ -71,7 +71,7 @@ export default function Contact() {
             </div>
             <div className="flex h-14 w-1/2 items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
               <input
-                className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-white"
+                className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
                 type="text"
                 id="phone"
                 value={phone}
@@ -82,7 +82,7 @@ export default function Contact() {
           </div>
           <div className="flex h-14 w-full items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
             <input
-              className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-white"
+              className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
               type="email"
               id="email"
               value={email}
@@ -93,7 +93,7 @@ export default function Contact() {
           </div>
           <div className="flex h-60 w-full items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
             <textarea
-              className="h-full w-full bg-[#BDBCBC] p-2 align-top placeholder:font-digitalix placeholder:text-white"
+              className="h-full w-full bg-[#BDBCBC] p-2 align-top placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
               type="text"
               id="message"
               value={message}

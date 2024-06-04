@@ -13,8 +13,8 @@ const projects = [
       "Mongoose",
       "MongoDB",
       "Tailwind CSS",
-      "Shadcn",
       "DaisyUi",
+      "Shadcn",
     ],
   },
   // Top Right Project idx[1]
@@ -24,7 +24,7 @@ const projects = [
     alt: "My Own Portfolio",
     url: "https://maxime-bocquet.vercel.app/",
     desc: "Portfolio personnel",
-    technos: ["React", "Tailwind CSS", "Framer-motion"],
+    technos: ["React", "Tailwind CSS", "Framer-Motion"],
   },
 ];
 
