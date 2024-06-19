@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import SkillCard from "./SkillCard";
+import SkillCard from "./SkillCardOld";
 import technos from "@/data/technos";
 
 const container = {

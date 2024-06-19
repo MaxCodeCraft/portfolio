@@ -19,7 +19,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex w-full flex-col bg-gradient-to-b from-spatialGrey from-10% via-tardisBlue via-60% to-spatialGrey"
+      className="flex w-full flex-col bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey"
     >
       <ProjectsTitle />
       <div className="my-16 flex w-full flex-wrap justify-center gap-16">

@@ -6,25 +6,19 @@ const SkillsTitle = dynamic(() => import("@/components/titles/SkillsTitle"), {
   ssr: false,
 });
 
-const SkillCardsContainer = dynamic(
-  () => import("@/components/cards/SkillCardsContainer"),
-  {
-    ssr: false,
-  },
-);
-
 export default function Skills() {
   return (
     <div
       id="skills"
-      className="bg-nebula flex w-full flex-col bg-spatialGrey pt-10"
+      className="bg-nebula flex w-full flex-col bg-gradient-to-b from-spatialGrey from-80% to-tardisBlue pt-10"
     >
       <SkillsTitle />
 
-      <div className="relative mx-auto my-16 w-[930px]">
+      <div className="relative mx-auto mt-16 h-[600px] w-[600px] lg:h-[930px] lg:w-[930px]">
         <motion.div
-          className="absolute left-[74.35%] top-[18.15%] flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-b from-[#242627] to-[#343535] p-2"
-          animate={{ scale: [1, 1.3, 1] }}
+          className="tooltip absolute left-[74.0%] top-[15.4%] flex h-[6%] w-[6%] items-center justify-center rounded-full border bg-gradient-to-b from-[#242627] to-[#343535] p-2"
+          data-tip="Node.js"
+          animate={{ scale: [1, 1.35, 1] }}
           transition={{
             duration: 1.5,
             repeat: Infinity, // Répéter à l'infini
@@ -35,8 +29,9 @@ export default function Skills() {
           <img src="/technos/nodejs.svg" alt="node logo" className="w-full" />
         </motion.div>
         <motion.div
-          className="absolute left-[65.5%] top-[23.25%] flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-b from-[#242627] to-[#444] p-2"
-          animate={{ scale: [1, 1.3, 1] }}
+          className="tooltip absolute left-[65%] top-[19.8%] flex h-[6%] w-[6%] items-center justify-center rounded-full border bg-gradient-to-b from-[#242627] to-[#444] p-2"
+          data-tip="React"
+          animate={{ scale: [1, 1.35, 1] }}
           transition={{
             duration: 1.5,
             repeat: Infinity, // Répéter à l'infini

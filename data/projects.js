@@ -1,5 +1,4 @@
 const projects = [
-  // Top Project idx[0]
   {
     title: "Notaview",
     image: "/projects/notaview.png",
@@ -17,7 +16,6 @@ const projects = [
       "Shadcn",
     ],
   },
-  // Top Right Project idx[1]
   {
     title: "Portfolio",
     image: "/projects/portfolio.png",
