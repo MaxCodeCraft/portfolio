@@ -10,11 +10,11 @@ export default function Hero() {
         <div className="flex flex-col gap-4">
           <div>
             <span className="align-bottom text-3xl text-white">Hi, I am </span>
-            <span className="font-digitalix text-4xl text-gallifreyanGold shadow-lg">
+            <span className="font-goodtimes text-4xl text-gallifreyanGold">
               MAX
             </span>
           </div>
-          <p className="align-bottom font-digitalix text-tardisOrange">
+          <p className="font-goodtimes align-bottom text-2xl text-tardisOrange">
             FULL STACK <span className="text-white">DEVELOPPER</span>
           </p>
           <HeroVector />

@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GoodTimes";
+  src: url("/assets/goodtimes.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .clip-path {
   clip-path: url(#myClip);
 }

@@ -13,7 +13,7 @@ export default function SkillCard(props) {
   return (
     <a href={props.url} target="blank">
       <motion.div
-        className={`flex h-40 w-40 flex-col items-center justify-around border-2 ${
+        className={`flex h-40 w-40 flex-col items-center justify-center gap-4 border-2 p-2 ${
           isHovered ? "border-gallifreyanGold" : "border-white"
         } rounded-md`}
         onHoverStart={() => setIsHovered(true)}
@@ -23,11 +23,11 @@ export default function SkillCard(props) {
         <img
           src={props.img}
           alt={props.alt}
-          className={`${isHovered ? "w-16" : "w-24"}`}
+          className={`${isHovered ? "w-14" : "w-20"}`}
         />
         {isHovered ? (
           <div className="flex flex-col items-center gap-2">
-            <p className="text-center font-digitalix text-sm text-gallifreyanGold">
+            <p className="text-center font-digitalix text-sm text-white">
               {props.title.toUpperCase()}
             </p>
             {/* <p className="text-center  text-white">{props.desc}</p> */}

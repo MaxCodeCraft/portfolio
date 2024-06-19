@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         digitalix: ["Digitalix", "sans-serif"],
+        goodtimes: ["GoodTimes", "sans-serif"],
       },
       colors: {
         gallifreyanGold: "#FFD700",
