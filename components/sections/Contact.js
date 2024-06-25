@@ -52,7 +52,7 @@ export default function Contact() {
 
   return (
     <div id="contact" className="flex w-full flex-col bg-spatialGrey">
-      <ContactTitle />
+      {/* <ContactTitle /> */}
       <div className="m-auto flex w-[650px] py-16">
         <form
           className="flex w-full flex-col items-center gap-4"

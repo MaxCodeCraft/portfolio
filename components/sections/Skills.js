@@ -5,6 +5,12 @@ import technos from "@/data/technos";
 const SkillsTitle = dynamic(() => import("@/components/titles/SkillsTitle"), {
   ssr: false,
 });
+const SkillsTitleBis = dynamic(
+  () => import("@/components/titles/SkillsTitleBis"),
+  {
+    ssr: false,
+  },
+);
 
 export default function Skills() {
   const skills = technos.map((techno) => {
@@ -22,12 +28,14 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="flex w-full flex-col bg-gradient-to-b from-spatialGrey from-80% to-tardisBlue pt-10"
+      className="flex w-full justify-center bg-gradient-to-b from-spatialGrey from-80% to-tardisBlue"
     >
-      <SkillsTitle />
-      <div className="relative mx-auto mt-16 h-[522px] w-[600px] lg:h-[740px] lg:w-[850px]">
-        {skills}
-        <img src="/images/console.svg" alt="Tardis skills console" />
+      <div className="flex w-11/12 flex-wrap pb-24 md:w-10/12">
+        <SkillsTitleBis />
+        <div className="relative mx-auto mt-16 h-[278px] w-[320px] md:mt-24 md:h-[566px] md:w-[650px]">
+          {skills}
+          <img src="/images/console.svg" alt="Tardis skills console" />
+        </div>
       </div>
     </div>
   );

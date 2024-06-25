@@ -10,6 +10,12 @@ const ProjectsTitle = dynamic(
     ssr: false,
   },
 );
+const ProjectsTitleBis = dynamic(
+  () => import("@/components/titles/ProjectsTitleBis"),
+  {
+    ssr: false,
+  },
+);
 
 export default function Projects() {
   const project = projects.map((data, index) => {
@@ -19,11 +25,13 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex w-full flex-col bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey"
+      className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey"
     >
-      <ProjectsTitle />
-      <div className="my-16 flex w-full flex-wrap justify-center gap-16">
-        {project}
+      <div className="flex w-10/12 flex-col">
+        <ProjectsTitleBis />
+        <div className="flex w-full flex-wrap justify-center gap-16 pb-16 pt-32">
+          {project}
+        </div>
       </div>
     </div>
   );

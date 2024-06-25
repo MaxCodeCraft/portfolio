@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey pt-56">
+    <div className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey pb-24 pt-56">
       <div className="left-section">
         <div className="flex flex-col gap-4">
           <div>
@@ -14,7 +14,7 @@ export default function Hero() {
               MAX
             </span>
           </div>
-          <p className="font-goodtimes align-bottom text-2xl text-tardisOrange">
+          <p className="align-bottom font-goodtimes text-2xl text-tardisOrange">
             FULL STACK <span className="text-white">DEVELOPPER</span>
           </p>
           <HeroVector />
