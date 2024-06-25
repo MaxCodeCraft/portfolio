@@ -9,7 +9,7 @@ export default function Header() {
     <header className="absolute flex h-20 w-full items-center justify-between bg-spatialGrey/75 px-5 md:h-28">
       <div>
         <Image
-          src={"/mcc-logo2.png"}
+          src={"/images/mcc-logo.png"}
           width={40}
           height={73}
           className="w-10 object-contain"
@@ -21,22 +21,22 @@ export default function Header() {
       </div>
       <div className="hidden items-center justify-center gap-6 md:flex">
         <Link href={"#"}>
-          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
+          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
             A PROPOS
           </p>
         </Link>
         <Link href={"#skills"}>
-          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
-            COMPETENCES
+          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
+            COMPéTENCES
           </p>
         </Link>
         <Link href={"#projects"}>
-          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
+          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
             PROJETS
           </p>
         </Link>
         <Link href={"#contact"}>
-          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
+          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
             CONTACT
           </p>
         </Link>
