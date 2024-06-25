@@ -96,20 +96,21 @@ export default function Contact() {
               className={`flex h-14 w-6/12 items-center justify-center rounded-md ${isSelected === "name" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
             >
               <input
-                className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+                className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
                 type="text"
                 id="name"
                 value={name}
                 placeholder="NOM"
                 onChange={(e) => setName(e.target.value)}
-                onClick={() => setIsSelected("name")}
+                // onClick={() => setIsSelected("name")}
+                onFocus={() => setIsSelected("name")}
               />
             </div>
             <div
               className={`flex h-14 w-6/12 items-center justify-center rounded-md ${isSelected === "phone" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
             >
               <input
-                className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+                className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
                 type="text"
                 id="phone"
                 value={phone}
@@ -123,7 +124,7 @@ export default function Contact() {
             className={`flex h-14 w-full items-center justify-center rounded-md ${isSelected === "email" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
           >
             <input
-              className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+              className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
               type="email"
               id="email"
               value={email}
@@ -137,7 +138,7 @@ export default function Contact() {
             className={`flex h-60 w-full items-center justify-center rounded-md ${isSelected === "message" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
           >
             <textarea
-              className="h-full w-full bg-[#BDBCBC] p-2 align-top placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+              className="h-full w-full bg-[#BDBCBC] p-2 align-top outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
               type="text"
               id="message"
               value={message}

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import SkillCard from "./SkillCard";
 import technos from "@/data/technos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
