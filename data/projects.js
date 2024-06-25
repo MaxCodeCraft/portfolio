@@ -22,7 +22,7 @@ const projects = [
     alt: "My Own Portfolio",
     url: "https://maxime-bocquet.vercel.app/",
     desc: "Portfolio personnel",
-    technos: ["React", "Tailwind CSS", "Framer-Motion"],
+    technos: ["React", "Tailwind CSS", "Framer-Motion", "DaisyUi"],
   },
 ];
 
