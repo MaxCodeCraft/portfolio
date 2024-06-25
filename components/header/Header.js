@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   return (
-    <header className="absolute flex h-28 w-full items-center justify-between bg-spatialGrey/75 px-5">
+    <header className="absolute flex h-20 w-full items-center justify-between bg-spatialGrey/75 px-5 md:h-28">
       <div>
         <Image
           src={"/mcc-logo2.png"}
@@ -15,6 +15,9 @@ export default function Header() {
           className="w-10 object-contain"
           alt="MaxCodeCraft Logo"
         />
+      </div>
+      <div className="cursor-pointer text-white md:hidden">
+        <FontAwesomeIcon icon={faBars} size="xl" />
       </div>
       <div className="hidden items-center justify-center gap-6 md:flex">
         <Link href={"#"}>
@@ -38,7 +41,7 @@ export default function Header() {
           </p>
         </Link>
       </div>
-      <div> </div>
+      <div className="hidden md:block"> </div>
       {/* <div className="flex gap-4">
         <a
           href="https://github.com/MaxCodeCraft/"

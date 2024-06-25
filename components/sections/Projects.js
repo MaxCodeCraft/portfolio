@@ -11,7 +11,14 @@ const ProjectsTitle = dynamic(
 
 export default function Projects() {
   const project = projects.map((data, index) => {
-    return <ProjectCard image={data.image} alt={data.alt} key={index} />;
+    return (
+      <ProjectCard
+        image={data.image}
+        alt={data.alt}
+        technos={data.technos}
+        key={index}
+      />
+    );
   });
 
   return (

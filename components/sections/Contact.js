@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
@@ -101,7 +100,7 @@ export default function Contact() {
                 type="text"
                 id="name"
                 value={name}
-                placeholder="Name"
+                placeholder="NOM"
                 onChange={(e) => setName(e.target.value)}
                 onClick={() => setIsSelected("name")}
               />
@@ -114,7 +113,7 @@ export default function Contact() {
                 type="text"
                 id="phone"
                 value={phone}
-                placeholder="Phone Number"
+                placeholder="TELEPHONE"
                 onChange={(e) => setPhone(e.target.value)}
                 onClick={() => setIsSelected("phone")}
               />
@@ -128,7 +127,7 @@ export default function Contact() {
               type="email"
               id="email"
               value={email}
-              placeholder="Email"
+              placeholder="EMAIL"
               required
               onChange={(e) => setEmail(e.target.value)}
               onClick={() => setIsSelected("email")}
@@ -142,7 +141,7 @@ export default function Contact() {
               type="text"
               id="message"
               value={message}
-              placeholder="Message"
+              placeholder="MESSAGE"
               required
               onChange={(e) => setMessage(e.target.value)}
               onClick={() => setIsSelected("message")}
