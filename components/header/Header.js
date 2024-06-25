@@ -16,7 +16,7 @@ export default function Header() {
           alt="MaxCodeCraft Logo"
         />
       </div>
-      <div className="flex items-center justify-center gap-6">
+      <div className="hidden items-center justify-center gap-6 md:flex">
         <Link href={"#"}>
           <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
             A PROPOS

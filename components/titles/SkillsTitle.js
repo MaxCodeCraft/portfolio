@@ -9,9 +9,9 @@ export default function SkillsTitle() {
         compétences
       </h2>
       <p className="text-white">
-        Passionné par le développement, j'allie compétences techniques avancées
-        et créativité. Expert en développement web et mobile, intégration d'API,
-        et gestion de bases de données.
+        Passionné par le développement, j&apos;allie compétences techniques
+        avancées et créativité. Expert en développement web et mobile,
+        intégration d&apos;API, et gestion de bases de données.
       </p>
       <p className="text-white">
         Je suis toujours prêt à relever de nouveaux défis et à apprendre de
