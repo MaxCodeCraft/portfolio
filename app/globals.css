@@ -20,15 +20,6 @@
   clip-path: url(#myClip);
 }
 
-.bg-nebula::before {
-  content: "";
-  background-image: url("/images/nebula.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.2;
-}
-
 .clipped-corner {
   clip-path: polygon(
     0 0,

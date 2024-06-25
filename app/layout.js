@@ -1,9 +1,11 @@
 import { Open_Sans } from "next/font/google";
+import { Offside } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
 
 const open = Open_Sans({ subsets: ["latin"] });
+const offside = Offside({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "MaxCodeCraft - Portfolio",
@@ -13,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={open.className}>
+      <body className={offside.className}>
         <Header />
         {children}
         <Footer />
