@@ -9,7 +9,9 @@ export default function Hero() {
       <div className="left-section">
         <div className="flex flex-col gap-4">
           <div>
-            <span className="align-bottom text-3xl text-white">Hi, I am </span>
+            <span className="align-bottom text-3xl text-white">
+              Salut, je suis{" "}
+            </span>
             <span className="font-goodtimes text-4xl text-gallifreyanGold">
               MAX
             </span>
@@ -19,15 +21,16 @@ export default function Hero() {
           </p>
           <HeroVector />
           <p className="-mt-16 max-w-[450px] text-white">
-            Hello and welcome to my site! I&apos;m a passionate full stack web
-            developer with a unique background in sales. I use the MERN stack
-            and love React libraries like Tailwind CSS and Framer Motion.
-            Through an intensive bootcamp, I&apos;ve mastered the frameworks
-            needed to bring your projects to life!
+            Bonjour et bienvenue sur mon site ! Je suis un développeur web full
+            stack passionné avec une expérience unique dans la vente.
+            J&apos;utilise la stack MERN et j&apos;apprécie les bibliothèques
+            React telles que Tailwind CSS et Framer Motion. Grâce à un bootcamp
+            intensif, j&apos;ai maîtrisé les frameworks nécessaires pour donner
+            vie à vos projets !
           </p>
           <div className="flex gap-4">
-            <YellowButton url="#contact" title="CONTACT ME" />
-            <TransparentButton url="#projects" title="DISCOVER MY WORK" />
+            <YellowButton url="#contact" title="CONTACT" />
+            <TransparentButton url="#projects" title="DECOUVRIR MES PROJETS" />
           </div>
         </div>
       </div>

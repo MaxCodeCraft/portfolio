@@ -19,12 +19,9 @@ export default function Header() {
       <div className="flex items-center justify-center gap-4">
         <Link href={"#projects"}>
           <p className="font-digitalix text-white hover:text-gallifreyanGold">
-            MY WORK
+            MES PROJETS
           </p>
         </Link>
-        <p className="font-digitalix text-white hover:text-gallifreyanGold">
-          ABOUT ME
-        </p>
         <Link href={"#contact"}>
           <p className="font-digitalix text-white hover:text-gallifreyanGold">
             CONTACT

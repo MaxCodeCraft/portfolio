@@ -1,10 +1,5 @@
 "use client";
-import dynamic from "next/dynamic";
 import { useState } from "react";
-
-const ContactTitle = dynamic(() => import("@/components/titles/ContactTitle"), {
-  ssr: false,
-});
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -52,7 +47,6 @@ export default function Contact() {
 
   return (
     <div id="contact" className="flex w-full flex-col bg-spatialGrey">
-      {/* <ContactTitle /> */}
       <div className="m-auto flex w-[650px] py-16">
         <form
           className="flex w-full flex-col items-center gap-4"

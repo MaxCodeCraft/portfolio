@@ -12,7 +12,7 @@ const play = {
 
 export default function TitleVectorBottom() {
   return (
-    <div className="absolute bottom-0 right-0 -mb-11 -mr-6">
+    <div className="absolute bottom-0 right-0 -mb-10 -mr-5">
       <svg
         width="477"
         height="177"

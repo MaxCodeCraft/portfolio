@@ -1,17 +1,9 @@
-"use client";
 import dynamic from "next/dynamic";
-import { useState } from "react";
 import ProjectCard from "../cards/ProjectCard";
 import projects from "@/data/projects";
 
 const ProjectsTitle = dynamic(
   () => import("@/components/titles/ProjectsTitle"),
-  {
-    ssr: false,
-  },
-);
-const ProjectsTitleBis = dynamic(
-  () => import("@/components/titles/ProjectsTitleBis"),
   {
     ssr: false,
   },
@@ -28,7 +20,7 @@ export default function Projects() {
       className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey"
     >
       <div className="flex w-10/12 flex-col">
-        <ProjectsTitleBis />
+        <ProjectsTitle />
         <div className="flex w-full flex-wrap justify-center gap-16 pb-16 pt-32">
           {project}
         </div>
