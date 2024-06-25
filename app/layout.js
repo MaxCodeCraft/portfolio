@@ -6,7 +6,7 @@ import "./globals.css";
 const open = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MaxCodeCraft - Web.Dev",
+  title: "MaxCodeCraft - Portfolio",
   description: "This is my portfolio",
 };
 
