@@ -9,26 +9,37 @@ export default function Header() {
     <header className="absolute flex h-28 w-full items-center justify-between bg-spatialGrey/75 px-5">
       <div>
         <Image
-          src={"/mcc-logo.png"}
+          src={"/mcc-logo2.png"}
           width={40}
           height={73}
           className="w-10 object-contain"
           alt="MaxCodeCraft Logo"
         />
       </div>
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-center gap-6">
+        <Link href={"#"}>
+          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
+            A PROPOS
+          </p>
+        </Link>
+        <Link href={"#skills"}>
+          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
+            COMPETENCES
+          </p>
+        </Link>
         <Link href={"#projects"}>
-          <p className="font-digitalix text-white hover:text-gallifreyanGold">
-            MES PROJETS
+          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
+            PROJETS
           </p>
         </Link>
         <Link href={"#contact"}>
-          <p className="font-digitalix text-white hover:text-gallifreyanGold">
+          <p className="font-digitalix text-xs text-white hover:text-gallifreyanGold md:text-base">
             CONTACT
           </p>
         </Link>
       </div>
-      <div className="flex gap-4">
+      <div> </div>
+      {/* <div className="flex gap-4">
         <a
           href="https://github.com/MaxCodeCraft/"
           target="blank"
@@ -47,7 +58,7 @@ export default function Header() {
             <FontAwesomeIcon icon={faLinkedin} className="w-6" />
           </div>
         </a>
-      </div>
+      </div> */}
     </header>
   );
 }

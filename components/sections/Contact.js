@@ -1,7 +1,12 @@
 "use client";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
+  const [isSelected, setIsSelected] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -46,14 +51,51 @@ export default function Contact() {
   }
 
   return (
-    <div id="contact" className="flex w-full flex-col bg-spatialGrey">
-      <div className="m-auto flex w-[650px] py-16">
+    <div
+      id="contact"
+      className="flex w-full flex-wrap justify-center gap-4 bg-spatialGrey py-16"
+    >
+      <div className="flex h-[386px] w-[400px] flex-col gap-6 bg-white/10 p-8">
+        <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
+          Contact
+        </h2>
+        <p className="text-white">
+          Envie de collaborer ou de discuter de vos idées de projet ?
+          Contactez-moi pour voir comment nous pouvons travailler ensemble pour
+          donner vie à vos concepts numériques.
+        </p>
+        <div className="text-white hover:text-gallifreyanGold">
+          <a
+            href="https://github.com/MaxCodeCraft/"
+            target="blank"
+            aria-label="link to my github repositories"
+            className="flex items-center gap-4"
+          >
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+            <p className="">Lien vers mon GitHub !</p>
+          </a>
+        </div>
+        <div className="text-white hover:text-gallifreyanGold">
+          <a
+            href="https://www.linkedin.com/in/maxime-bocquet-8870a0261/"
+            target="blank"
+            aria-label="link to my linkedin profile page"
+            className="flex items-center gap-4"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="xl" />
+            <p className="">Consultez ma page Linkedin.</p>
+          </a>
+        </div>
+      </div>
+      <div className="w-[650px]">
         <form
           className="flex w-full flex-col items-center gap-4"
           onSubmit={(e) => onSubmit(e)}
         >
           <div className="flex w-full gap-4">
-            <div className="flex h-14 w-1/2 items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
+            <div
+              className={`flex h-14 w-6/12 items-center justify-center rounded-md ${isSelected === "name" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
+            >
               <input
                 className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
                 type="text"
@@ -61,9 +103,12 @@ export default function Contact() {
                 value={name}
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
+                onClick={() => setIsSelected("name")}
               />
             </div>
-            <div className="flex h-14 w-1/2 items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
+            <div
+              className={`flex h-14 w-6/12 items-center justify-center rounded-md ${isSelected === "phone" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
+            >
               <input
                 className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
                 type="text"
@@ -71,10 +116,13 @@ export default function Contact() {
                 value={phone}
                 placeholder="Phone Number"
                 onChange={(e) => setPhone(e.target.value)}
+                onClick={() => setIsSelected("phone")}
               />
             </div>
           </div>
-          <div className="flex h-14 w-full items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
+          <div
+            className={`flex h-14 w-full items-center justify-center rounded-md ${isSelected === "email" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
+          >
             <input
               className="h-full w-full bg-[#BDBCBC] p-2 placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
               type="email"
@@ -83,9 +131,12 @@ export default function Contact() {
               placeholder="Email"
               required
               onChange={(e) => setEmail(e.target.value)}
+              onClick={() => setIsSelected("email")}
             />
           </div>
-          <div className="flex h-60 w-full items-center justify-center rounded-md bg-gradient-to-tr from-gallifreyanGold to-tardisOrange p-1">
+          <div
+            className={`flex h-60 w-full items-center justify-center rounded-md ${isSelected === "message" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
+          >
             <textarea
               className="h-full w-full bg-[#BDBCBC] p-2 align-top placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
               type="text"
@@ -94,14 +145,16 @@ export default function Contact() {
               placeholder="Message"
               required
               onChange={(e) => setMessage(e.target.value)}
+              onClick={() => setIsSelected("message")}
             />
           </div>
           <div className="flex w-full justify-end">
             <button
-              className="clipped-corner items-center justify-center rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-digitalix text-xs text-white"
+              className="flex items-center justify-center gap-2 rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-goodtimes text-xs text-white"
               type="submit"
+              onClick={() => setIsSelected("")}
             >
-              SUBMIT
+              ENVOYER <FontAwesomeIcon icon={faPaperPlane} size="xl" />
             </button>
           </div>
         </form>
