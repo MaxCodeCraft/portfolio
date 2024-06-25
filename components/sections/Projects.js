@@ -13,8 +13,11 @@ export default function Projects() {
   const project = projects.map((data, index) => {
     return (
       <ProjectCard
+        title={data.title}
         image={data.image}
         alt={data.alt}
+        url={data.url}
+        desc={data.desc}
         technos={data.technos}
         key={index}
       />

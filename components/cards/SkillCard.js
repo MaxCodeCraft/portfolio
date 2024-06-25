@@ -5,7 +5,7 @@ export default function SkillCard(props) {
   return (
     <a href={props.url} target="_blank">
       <motion.div
-        className={`tooltip absolute flex h-[6.3%] w-[5.48%] items-center justify-center rounded-full border bg-gradient-to-b from-[#242627] to-[#4f4f4f] p-1 md:p-2`}
+        className={`tooltip absolute flex ${props.coords ? "h-[6.3%] w-[5.48%]" : "h-8 w-8"} items-center justify-center rounded-full border bg-gradient-to-b from-[#242627] to-[#4f4f4f] p-1 md:p-2`}
         data-tip={props.title}
         style={props.coords}
         animate={{ scale: [1, 1.35, 1] }}

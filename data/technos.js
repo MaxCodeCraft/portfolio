@@ -71,7 +71,7 @@ const technos = [
   },
   {
     img: "/technos/framer-motion.svg",
-    title: "Framer Motion",
+    title: "Framer-Motion",
     alt: "Framer Motion Logo",
     url: "https://framer.com/motion/",
     coords: { top: "69%", left: "28.5%" },
