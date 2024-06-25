@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
           <div className="flex gap-4">
             <YellowButton url="#contact" title="CONTACT" />
-            <TransparentButton url="#projects" title="DECOUVRIR MES PROJETS" />
+            <TransparentButton url="#projects" title="MES PROJETS" />
           </div>
         </div>
       </div>

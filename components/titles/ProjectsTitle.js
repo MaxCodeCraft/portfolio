@@ -6,7 +6,7 @@ export default function ProjectsTitle() {
     <div className="cutted relative flex h-[189px] w-[720px] flex-col justify-between bg-white/10 p-8">
       <TitleVectorTop />
       <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
-        Mes projets
+        projets
       </h2>
       <p className="text-white">
         Découvrez une sélection de mes derniers projets, chacun illustrant des

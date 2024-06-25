@@ -6,7 +6,7 @@ export default function SkillsTitle() {
     <div className="cutted relative flex h-[233px] w-[480px] flex-col justify-between bg-white/10 p-5">
       <TitleVectorTop />
       <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
-        Mes compétences
+        compétences
       </h2>
       <p className="text-white">
         Passionné par le développement, j'allie compétences techniques avancées
