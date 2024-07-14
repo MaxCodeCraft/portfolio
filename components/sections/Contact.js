@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -76,7 +77,7 @@ export default function Contact() {
         </div>
         <div className="text-white hover:text-gallifreyanGold">
           <a
-            href="https://www.linkedin.com/in/maxime-bocquet-8870a0261/"
+            href="https://www.linkedin.com/in/maxime-bocquet-dev/"
             target="blank"
             aria-label="link to my linkedin profile page"
             className="flex items-center gap-4"
@@ -102,7 +103,6 @@ export default function Contact() {
                 value={name}
                 placeholder="NOM"
                 onChange={(e) => setName(e.target.value)}
-                // onClick={() => setIsSelected("name")}
                 onFocus={() => setIsSelected("name")}
               />
             </div>
@@ -149,13 +149,19 @@ export default function Contact() {
             />
           </div>
           <div className="flex w-full justify-end">
-            <button
-              className="flex items-center justify-center gap-2 rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-goodtimes text-xs text-white"
+            <motion.button
+              initial={{
+                background: "linear-gradient(to right, #ffd700, #ff8c00)",
+              }}
+              whileHover={{
+                background: "linear-gradient(to left, #ffd700, #ff8c00)",
+              }}
+              className="flex items-center justify-center gap-2 rounded px-6 py-[14px] font-goodtimes text-xs text-white"
               type="submit"
               onClick={() => setIsSelected("")}
             >
               ENVOYER <FontAwesomeIcon icon={faPaperPlane} size="xl" />
-            </button>
+            </motion.button>
           </div>
         </form>
 

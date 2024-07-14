@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import SkillCard from "./SkillCard";
+import { motion } from "framer-motion";
 import technos from "@/data/technos";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -66,9 +67,19 @@ export default function ProjectCard(props) {
           <div className="flex h-12 w-full gap-12">{technosToDisplay}</div>
           <div className="flex justify-end">
             <a href={props.url} target="_blank">
-              <button className="flex items-center justify-center gap-2 rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-goodtimes text-xs text-white">
-                Je découvre <FontAwesomeIcon icon={faPaperPlane} size="xl" />
-              </button>
+              <motion.button
+                initial={{
+                  background: "linear-gradient(to right, #ffd700, #ff8c00)",
+                }}
+                whileHover={{
+                  background: "linear-gradient(to left, #ffd700, #ff8c00)",
+                }}
+                className="items-center justify-center rounded"
+              >
+                <p className="px-6 py-[14px] font-goodtimes text-xs text-white">
+                  Je découvre <FontAwesomeIcon icon={faPaperPlane} size="xl" />
+                </p>
+              </motion.button>
             </a>
           </div>
         </div>

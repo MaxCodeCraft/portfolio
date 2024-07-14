@@ -8,7 +8,7 @@ const offside = Offside({ subsets: ["latin"], weight: "400" });
 export const metadata = {
   title: "MaxCodeCraft | Maxime Bocquet",
   description:
-    "Je suis un développeur web full stack passionné avec une expérience unique dans la vente. J'utilise la stack MERN et j'apprécie les bibliothèques React telles que Tailwind CSS et Framer Motion. Grâce à un bootcamp intensif, j'ai maîtrisé les frameworks nécessaires pour donner vie à vos projets !",
+    "Développeur full stack spécialisé dans la méthode MERN (MongoDB, Express.js, React, Node.js) basé à Nice, France. Expertise en développement web, applications web modernes et solutions logicielles. Disponible pour des projets freelance et collaborations.",
 };
 
 export default function RootLayout({ children }) {
