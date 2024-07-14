@@ -24,7 +24,7 @@ export default function ProjectCard(props) {
   return (
     <>
       <div
-        className="relative h-[200px] w-[380px] overflow-hidden rounded-sm hover:cursor-pointer"
+        className="relative h-auto w-[380px] overflow-hidden rounded-sm hover:cursor-pointer"
         onClick={() => document.getElementById(props.title).showModal()}
       >
         <Image
@@ -34,11 +34,6 @@ export default function ProjectCard(props) {
           height={200}
           className="w-full rounded-sm"
         />
-        <div className="left-0 top-0 hidden h-full w-full hover:absolute">
-          <div className="flex h-full w-full items-center justify-center">
-            <p className="font-goodtimes text-xl">+ de détails</p>
-          </div>
-        </div>
         <div className="tv absolute left-0 top-0 h-full w-full opacity-40 shadow-inner hover:opacity-0" />
       </div>
       <dialog id={`${props.title}`} className="modal">

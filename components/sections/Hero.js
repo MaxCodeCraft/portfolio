@@ -37,9 +37,9 @@ export default function Hero() {
       <div className="right-section hidden pl-6 md:block">
         <Image
           src={"/images/me.png"}
-          width={164}
-          height={581}
-          className="h-auto w-40"
+          width={208}
+          height={700}
+          className="h-auto w-44"
           alt="Me standing photo"
         />
       </div>

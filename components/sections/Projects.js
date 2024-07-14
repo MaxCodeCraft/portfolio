@@ -31,7 +31,7 @@ export default function Projects() {
     >
       <div className="flex w-10/12 flex-col">
         <ProjectsTitle />
-        <div className="flex w-full flex-wrap justify-center gap-16 pb-16 pt-32">
+        <div className="flex w-full flex-wrap justify-center gap-8 pb-16 pt-32 md:gap-16">
           {project}
         </div>
       </div>

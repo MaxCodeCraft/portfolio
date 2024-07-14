@@ -16,8 +16,41 @@ export default function Header() {
           alt="MaxCodeCraft Logo"
         />
       </div>
-      <div className="cursor-pointer text-white md:hidden">
-        <FontAwesomeIcon icon={faBars} size="xl" />
+      <div className="dropdown dropdown-end cursor-pointer text-white md:hidden">
+        <FontAwesomeIcon icon={faBars} size="xl" role="button" tabIndex={0} />
+        <ul
+          tabIndex={0}
+          className="menu dropdown-content z-[1] w-52 rounded-md bg-spatialGrey p-2 shadow-inner"
+        >
+          <li>
+            <Link href={"#"}>
+              <p className="font-goodtimes text-white hover:text-gallifreyanGold">
+                A PROPOS
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#skills"}>
+              <p className="font-goodtimes text-white hover:text-gallifreyanGold">
+                COMPéTENCES
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#projects"}>
+              <p className="font-goodtimes text-white hover:text-gallifreyanGold">
+                PROJETS
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#contact"}>
+              <p className="font-goodtimes text-white hover:text-gallifreyanGold">
+                CONTACT
+              </p>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="hidden items-center justify-center gap-6 md:flex">
         <Link href={"#"}>
@@ -42,26 +75,6 @@ export default function Header() {
         </Link>
       </div>
       <div className="hidden md:block"> </div>
-      {/* <div className="flex gap-4">
-        <a
-          href="https://github.com/MaxCodeCraft/"
-          target="blank"
-          aria-label="link to my github repositories"
-        >
-          <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyanGold hover:text-gallifreyanGold">
-            <FontAwesomeIcon icon={faGithub} className="w-6" />
-          </div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/maxime-bocquet-8870a0261/"
-          target="blank"
-          aria-label="link to my linkedin profile page"
-        >
-          <div className="flex h-12 w-12 items-center justify-center rounded-md border-2 border-white text-white hover:border-gallifreyanGold hover:text-gallifreyanGold">
-            <FontAwesomeIcon icon={faLinkedin} className="w-6" />
-          </div>
-        </a>
-      </div> */}
     </header>
   );
 }

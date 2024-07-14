@@ -55,7 +55,7 @@ export default function Contact() {
       id="contact"
       className="flex w-full flex-wrap justify-center gap-4 bg-spatialGrey py-16"
     >
-      <div className="mx-4 flex h-[386px] w-[400px] flex-col gap-6 bg-white/10 p-8 md:mx-0">
+      <div className="mx-4 flex w-[400px] flex-col gap-6 bg-white/10 p-8 md:mx-0 md:h-[386px]">
         <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
           Contact
         </h2>
