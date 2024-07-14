@@ -3,9 +3,9 @@ import TitleVectorBottom from "./TitleVectorBottom";
 
 export default function ProjectsTitle() {
   return (
-    <div className="cutted relative flex h-[189px] w-[720px] flex-col justify-between bg-white/10 p-8">
+    <div className="cutted relative mx-auto flex w-10/12 flex-col justify-between bg-white/10 p-5 md:mx-0 md:h-[189px] md:w-[720px]">
       <TitleVectorTop />
-      <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
+      <h2 className="neon pb-4 font-goodtimes text-2xl text-gallifreyanGold md:pb-0">
         projets
       </h2>
       <p className="text-white">

@@ -55,7 +55,7 @@ export default function Contact() {
       id="contact"
       className="flex w-full flex-wrap justify-center gap-4 bg-spatialGrey py-16"
     >
-      <div className="flex h-[386px] w-[400px] flex-col gap-6 bg-white/10 p-8">
+      <div className="mx-4 flex h-[386px] w-[400px] flex-col gap-6 bg-white/10 p-8 md:mx-0">
         <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
           Contact
         </h2>
@@ -87,14 +87,14 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <div className="w-[650px]">
+      <div className="mx-4 w-[650px] md:mx-0">
         <form
           className="flex w-full flex-col items-center gap-4"
           onSubmit={(e) => onSubmit(e)}
         >
-          <div className="flex w-full gap-4">
+          <div className="flex w-full flex-col gap-4 md:flex-row">
             <div
-              className={`flex h-14 w-6/12 items-center justify-center rounded-md ${isSelected === "name" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
+              className={`flex h-14 w-full items-center justify-center rounded-md md:w-6/12 ${isSelected === "name" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
             >
               <input
                 className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
@@ -107,7 +107,7 @@ export default function Contact() {
               />
             </div>
             <div
-              className={`flex h-14 w-6/12 items-center justify-center rounded-md ${isSelected === "phone" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
+              className={`flex h-14 w-full items-center justify-center rounded-md md:w-6/12 ${isSelected === "phone" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
             >
               <input
                 className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"

@@ -13,7 +13,7 @@ const play = {
 export default function HeroVector() {
   return (
     <svg
-      className="h-auto w-[550px]"
+      className="h-auto w-[320px] md:w-[550px]"
       viewBox="0 0 512 62"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

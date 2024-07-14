@@ -3,9 +3,9 @@ import TitleVectorBottom from "./TitleVectorBottom";
 
 export default function SkillsTitle() {
   return (
-    <div className="cutted relative flex h-[233px] w-[480px] flex-col justify-between bg-white/10 p-5">
+    <div className="cutted relative mx-auto flex w-10/12 flex-col justify-between bg-white/10 p-5 md:m-0 md:h-[233px] md:w-[480px]">
       <TitleVectorTop />
-      <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
+      <h2 className="neon pb-4 font-goodtimes text-2xl text-gallifreyanGold md:pb-0">
         compétences
       </h2>
       <p className="text-white">

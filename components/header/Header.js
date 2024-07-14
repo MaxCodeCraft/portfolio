@@ -8,18 +8,11 @@ export default function Header() {
   return (
     <header className="sticky flex h-20 w-full items-center justify-between bg-spatialGrey px-5 md:h-28 md:justify-center">
       <div className="neon md:absolute md:left-0 md:ml-4">
-        {/* <Image
-          src={"/images/mcc-logo.png"}
-          width={40}
-          height={73}
-          className="w-10 object-contain"
-          alt="MaxCodeCraft Logo"
-        /> */}
         <Image
-          src={"/images/mcc-logo2.png"}
+          src={"/images/mcc-logo.png"}
           width={842}
           height={168}
-          className="w-48 object-contain md:w-64"
+          className="w-48 object-contain md:w-32 lg:w-64"
           alt="MaxCodeCraft Logo"
         />
       </div>
