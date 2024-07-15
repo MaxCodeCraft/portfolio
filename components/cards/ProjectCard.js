@@ -59,7 +59,9 @@ export default function ProjectCard(props) {
             alt="separation line"
             className="w-1/2"
           />
-          <div className="flex h-12 w-full gap-12">{technosToDisplay}</div>
+          <div className="flex h-12 w-full flex-wrap gap-12 px-4">
+            {technosToDisplay}
+          </div>
           <div className="flex justify-end">
             <a href={props.url} target="_blank">
               <motion.button
