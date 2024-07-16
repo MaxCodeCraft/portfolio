@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   return (
-    <header className="sticky flex h-20 w-full items-center justify-between bg-spatialGrey px-5 md:h-28 md:justify-center">
+    <header className="flex h-20 w-full items-center justify-between bg-tardisBlue px-5 md:h-28 md:justify-center">
       <div className="neon md:absolute md:left-0 md:ml-4">
         <Image
           src={"/images/mcc-logo.png"}
@@ -22,13 +22,6 @@ export default function Header() {
           tabIndex={0}
           className="menu dropdown-content z-[1] w-52 rounded-md bg-spatialGrey p-2 shadow-inner"
         >
-          <li>
-            <Link href={"#"}>
-              <p className="font-goodtimes text-white hover:text-gallifreyanGold">
-                A PROPOS
-              </p>
-            </Link>
-          </li>
           <li>
             <Link href={"#skills"}>
               <p className="font-goodtimes text-white hover:text-gallifreyanGold">
@@ -53,23 +46,18 @@ export default function Header() {
         </ul>
       </div>
       <div className="hidden items-center justify-center gap-6 md:flex">
-        <Link href={"#"}>
-          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
-            A PROPOS
-          </p>
-        </Link>
         <Link href={"#skills"}>
-          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
+          <p className="font-goodtimes text-white hover:text-gallifreyanGold md:text-base lg:text-xl">
             COMPéTENCES
           </p>
         </Link>
         <Link href={"#projects"}>
-          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
+          <p className="font-goodtimes text-white hover:text-gallifreyanGold md:text-base lg:text-xl">
             PROJETS
           </p>
         </Link>
         <Link href={"#contact"}>
-          <p className="font-goodtimes text-xl text-white hover:text-gallifreyanGold md:text-base">
+          <p className="font-goodtimes text-white hover:text-gallifreyanGold md:text-base lg:text-xl">
             CONTACT
           </p>
         </Link>

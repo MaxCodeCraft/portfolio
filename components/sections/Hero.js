@@ -5,41 +5,61 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey pb-24 pt-16 md:pt-56">
+    <div className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey pb-12 pt-16 md:pb-24 md:pt-56">
       <div className="left-section">
-        <div className="flex flex-col gap-4 px-4">
-          <div>
-            <span className="align-bottom text-3xl text-white">
-              Salut, je suis{" "}
-            </span>
-            <span className="font-goodtimes text-4xl text-gallifreyanGold">
-              MAX
-            </span>
+        <div className="flex flex-col gap-6 px-4">
+          <div className="flex flex-col gap-2">
+            <div>
+              <span className="align-bottom text-3xl text-white">
+                Salut, je suis{" "}
+              </span>
+              <span className="font-goodtimes text-4xl text-gallifreyanGold">
+                MAX
+              </span>
+            </div>
+            <p className="align-bottom font-goodtimes text-2xl text-tardisOrange">
+              FULL STACK <span className="text-white">DEVELOPPER</span>
+            </p>
           </div>
-          <p className="align-bottom font-goodtimes text-2xl text-tardisOrange">
-            FULL STACK <span className="text-white">DEVELOPPER</span>
-          </p>
-          <HeroVector />
-          <p className="max-w-[450px] text-white md:-mt-16">
-            Bonjour et bienvenue ! Je suis Maxime Bocquet, un développeur web
-            full stack passionné avec une expérience unique dans la vente.
-            J&apos;utilise la stack MERN et j&apos;apprécie les bibliothèques
-            React telles que Tailwind CSS et Framer Motion. Grâce à un bootcamp
-            intensif, j&apos;ai maîtrisé les frameworks nécessaires pour donner
-            vie à vos projets !
-          </p>
+          <div className="hidden md:block">
+            <HeroVector />
+          </div>
+          <div className="flex max-w-[465px] flex-col gap-2 text-justify text-white md:-mt-16">
+            <p>
+              Bonjour et bienvenue ! Je suis{" "}
+              <span className="font-black text-gallifreyanGold">
+                Maxime Bocquet
+              </span>
+              , un développeur web full stack{" "}
+              <span className="font-black text-gallifreyanGold">passionné</span>{" "}
+              avec une expérience unique dans la vente.
+            </p>
+            <p>
+              J&apos;utilise la{" "}
+              <span className="font-black text-gallifreyanGold">
+                stack MERN
+              </span>{" "}
+              et j&apos;apprécie les bibliothèques React telles que Tailwind CSS
+              et Framer Motion.
+            </p>
+            {/* <p>
+              {" "}
+              Grâce à un bootcamp intensif, j&apos;ai maîtrisé les frameworks
+              nécessaires pour donner vie à vos projets !
+            </p> */}
+          </div>
           <div className="flex gap-4">
             <YellowButton url="#contact" title="CONTACT" />
             <TransparentButton url="#projects" title="MES PROJETS" />
           </div>
         </div>
       </div>
-      <div className="right-section hidden pl-6 md:block">
+      <div className="right-section -mt-40 hidden pl-6 md:block">
         <Image
           src={"/images/me.png"}
           width={208}
           height={700}
-          className="h-auto w-44"
+          className="h-auto w-52"
           alt="Me standing photo"
         />
       </div>

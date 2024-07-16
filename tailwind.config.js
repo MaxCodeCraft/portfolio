@@ -19,10 +19,19 @@ module.exports = {
       colors: {
         gallifreyanGold: "#FFD700",
         tardisOrange: "#FF8C00",
-        tardisBlue: "#003B73",
-        spatialGrey: "#242627",
+        tardisBlue: "#003262",
+        spatialGrey: "#1A1C1C",
       },
     },
+  },
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "base-100": "#242627",
+        },
+      },
+    ],
   },
   plugins: [require("daisyui")],
 };

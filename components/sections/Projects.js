@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey"
+      className="flex w-full justify-center bg-gradient-to-b from-tardisBlue from-80% to-spatialGrey py-12 md:py-24"
     >
       <div className="flex w-10/12 flex-col">
         <ProjectsTitle />

@@ -22,9 +22,9 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="flex w-full justify-center bg-gradient-to-b from-spatialGrey from-80% to-tardisBlue"
+      className="flex w-full justify-center bg-gradient-to-b from-spatialGrey from-80% to-tardisBlue py-12 md:py-24"
     >
-      <div className="flex w-screen flex-wrap pb-24 md:w-10/12">
+      <div className="flex w-screen flex-wrap md:w-10/12">
         <SkillsTitle />
         <div className="relative mx-auto mt-24 h-[278px] w-[320px] md:h-[566px] md:w-[650px]">
           {skills}

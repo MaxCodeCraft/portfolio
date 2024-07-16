@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex w-screen flex-col overflow-x-hidden">
       <Starfield
-        starCount={1200}
+        starCount={1300}
         starColor={[255, 255, 255]}
         speedFactor={0.05}
         backgroundColor="black"

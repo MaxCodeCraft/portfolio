@@ -53,10 +53,10 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex w-full flex-wrap justify-center gap-4 bg-spatialGrey py-16"
+      className="flex w-full flex-wrap justify-center gap-4 bg-spatialGrey py-12 md:py-24"
     >
       <div className="mx-4 flex w-[400px] flex-col gap-6 bg-white/10 p-8 md:mx-0 md:h-[386px]">
-        <h2 className="neon font-goodtimes text-2xl text-gallifreyanGold">
+        <h2 className="font-goodtimes text-2xl text-gallifreyanGold">
           Contact
         </h2>
         <p className="text-white">
@@ -97,7 +97,7 @@ export default function Contact() {
               className={`flex h-14 w-full items-center justify-center rounded-md md:w-6/12 ${isSelected === "name" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
             >
               <input
-                className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+                className="h-full w-full bg-[#BDBCBC] p-4 outline-none placeholder:font-goodtimes placeholder:text-sm placeholder:text-white"
                 type="text"
                 id="name"
                 value={name}
@@ -110,7 +110,7 @@ export default function Contact() {
               className={`flex h-14 w-full items-center justify-center rounded-md md:w-6/12 ${isSelected === "phone" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
             >
               <input
-                className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+                className="h-full w-full bg-[#BDBCBC] p-4 outline-none placeholder:font-goodtimes placeholder:text-sm placeholder:text-white"
                 type="text"
                 id="phone"
                 value={phone}
@@ -124,7 +124,7 @@ export default function Contact() {
             className={`flex h-14 w-full items-center justify-center rounded-md ${isSelected === "email" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
           >
             <input
-              className="h-full w-full bg-[#BDBCBC] p-2 outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+              className="h-full w-full bg-[#BDBCBC] p-4 outline-none placeholder:font-goodtimes placeholder:text-sm placeholder:text-white"
               type="email"
               id="email"
               value={email}
@@ -138,7 +138,7 @@ export default function Contact() {
             className={`flex h-60 w-full items-center justify-center rounded-md ${isSelected === "message" ? "bg-gradient-to-tr from-gallifreyanGold to-tardisOrange" : "bg-white"} p-1`}
           >
             <textarea
-              className="h-full w-full bg-[#BDBCBC] p-2 align-top outline-none placeholder:font-digitalix placeholder:text-xs placeholder:text-white"
+              className="h-full w-full bg-[#BDBCBC] p-4 align-top outline-none placeholder:font-goodtimes placeholder:text-sm placeholder:text-white"
               type="text"
               id="message"
               value={message}
@@ -156,7 +156,7 @@ export default function Contact() {
               whileHover={{
                 background: "linear-gradient(to left, #ffd700, #ff8c00)",
               }}
-              className="flex items-center justify-center gap-2 rounded px-6 py-[14px] font-goodtimes text-xs text-white"
+              className="flex items-center justify-center gap-4 rounded px-6 py-[14px] font-goodtimes text-xs text-white"
               type="submit"
               onClick={() => setIsSelected("")}
             >
@@ -170,7 +170,7 @@ export default function Contact() {
           className="modal rounded-lg bg-tardisBlue p-9"
         >
           <div className="modal-box">
-            <h3 className="font-digitalix text-lg text-gallifreyanGold">
+            <h3 className="font-goodtimes text-lg text-gallifreyanGold">
               Success !
             </h3>
             <p className="py-8 text-white">
@@ -179,7 +179,7 @@ export default function Contact() {
             <div className="modal-action flex w-full justify-end">
               <form method="dialog">
                 <button
-                  className="clipped-corner items-center justify-center rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-digitalix text-xs text-white"
+                  className="clipped-corner items-center justify-center rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-goodtimes text-xs text-white"
                   onClick={() => {
                     setName("");
                     setPhone("");
@@ -196,13 +196,13 @@ export default function Contact() {
 
         <dialog id="modal_error" className="modal rounded-lg bg-tardisBlue p-9">
           <div className="modal-box">
-            <h3 className="font-digitalix text-lg text-tardisOrange">
+            <h3 className="font-goodtimes text-lg text-tardisOrange">
               Error ...
             </h3>
             <p className="py-8 text-white">{error}</p>
             <div className="modal-action flex w-full justify-end">
               <form method="dialog">
-                <button className="clipped-corner items-center justify-center rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-digitalix text-xs text-white">
+                <button className="clipped-corner items-center justify-center rounded bg-gradient-to-tr from-gallifreyanGold to-tardisOrange px-6 py-[14px] font-goodtimes text-xs text-white">
                   CLOSE
                 </button>
               </form>
