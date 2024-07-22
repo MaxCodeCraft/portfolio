@@ -11,6 +11,8 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        yellowToOrange: "linear-gradient(to right, #ffd700, #ff8c00)",
+        orangeToYellow: "linear-gradient(to left, #ffd700, #ff8c00)",
       },
       fontFamily: {
         digitalix: ["Digitalix", "sans-serif"],

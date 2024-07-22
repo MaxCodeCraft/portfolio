@@ -10,7 +10,7 @@ export default function Header() {
       <div className="neon md:absolute md:left-0 md:ml-4">
         <Image
           src={"/images/mcc-logo.png"}
-          width={842}
+          width={877}
           height={168}
           className="w-48 object-contain md:w-32 lg:w-64"
           alt="MaxCodeCraft Logo"
