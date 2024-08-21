@@ -4,7 +4,7 @@ const projects = [
     image: "/projects/notaview.png",
     alt: "Notaview Website",
     url: "https://notaview.fr/",
-    desc: "Application Web commerciale bientôt lancée permettant aux médecins de retrouver toute l’information médicale de manière condensée.",
+    desc: "Application Web commerciale permettant aux médecins de retrouver toute l’information médicale de manière condensée.",
     technos: [
       "React",
       "TypeScript",
