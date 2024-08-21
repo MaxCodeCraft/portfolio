@@ -30,6 +30,7 @@ module.exports = {
     themes: [
       {
         mytheme: {
+          primary: "FFD700",
           "base-100": "#242627",
         },
       },

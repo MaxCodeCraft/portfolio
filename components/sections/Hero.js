@@ -42,15 +42,15 @@ export default function Hero() {
               et j&apos;apprécie les bibliothèques React telles que Tailwind CSS
               et Framer Motion.
             </p>
-            {/* <p>
-              {" "}
-              Grâce à un bootcamp intensif, j&apos;ai maîtrisé les frameworks
-              nécessaires pour donner vie à vos projets !
-            </p> */}
           </div>
           <div className="flex gap-4">
             <YellowButton url="#contact" title="CONTACT" />
-            <TransparentButton url="#projects" title="MES PROJETS" />
+            <div className="hidden md:block">
+              <TransparentButton url="#projects" title="MES PROJETS" />
+            </div>
+            <div className="md:hidden">
+              <TransparentButton url="#projects" title="PROJETS" />
+            </div>
           </div>
         </div>
       </div>

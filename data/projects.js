@@ -17,6 +17,14 @@ const projects = [
     ],
   },
   {
+    title: "Little Lemon",
+    image: "/projects/little-lemon.png",
+    alt: "Coding quiz application",
+    url: "https://little-lemon-restaurant-mu-drab.vercel.app/",
+    desc: "Capstone project pour la formation Meta Font-End Profesional Certificate",
+    technos: ["React", "Tailwind CSS"],
+  },
+  {
     title: "Quizbrain",
     image: "/projects/quizbrain.png",
     alt: "Coding quiz application",
