@@ -18,7 +18,7 @@ export default function Hero() {
               </span>
             </div>
             <p className="align-bottom font-goodtimes text-2xl text-tardisOrange">
-              FULL STACK <span className="text-white">DEVELOPPER</span>
+              FULL STACK <span className="text-white">DEVELOPER</span>
             </p>
           </div>
           <div className="hidden md:block">
